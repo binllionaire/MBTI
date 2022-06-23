@@ -1,0 +1,80 @@
+/* 강원교육모두체 Light*/ 
+@font-face {
+  font-family: 'GangwonEdu_OTFLightA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 강원교육모두체 Bold*/ 
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 고운바탕 Regular */
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 고운바탕 Bold */
+@font-face {
+  font-family: 'GowunBatang-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.startPage{
+  margin: 0 auto 0 auto;
+  width: 500px;
+  height: 700px;
+  background-image: url("totoro.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 40%;
+  font-family: 'GowunBatang-Regular';
+}
+.StartPage_Title{
+  padding-top: 60px;
+  text-align: center;
+  line-height: 5px;
+}
+.subTitle{
+}
+
+.title{
+  font-size: 30px;
+}
+.startBtn{
+  font-family: 'GowunBatang-Regular';
+  margin: 40px auto;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #616467;
+  box-shadow: inset 0 0 0 2px #616467;
+  background-color: transparent;
+  height: 48px;
+}
+.startBtn:hover{
+  cursor: pointer;
+  color: #fff;
+    background-color: #616467;
+}
+
+
