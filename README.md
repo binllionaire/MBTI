@@ -6,8 +6,8 @@ https://ghibli-mbti.netlify.app/question
 <img width="200" src="https://user-images.githubusercontent.com/46593078/176502351-fd17d523-3a2f-47b6-9741-83363bed314d.jpg">
 
 ## 질문화면
-<img width="200" float="left" src="https://user-images.githubusercontent.com/46593078/176502438-2c23afd2-88ef-4d46-b430-6765b4251dc1.jpg">
-<img width="200" float="left" src="https://user-images.githubusercontent.com/46593078/176502453-91f7e093-6d47-4da3-9a93-5bb8f88564c0.jpg">
+<img width="200" src="https://user-images.githubusercontent.com/46593078/176502438-2c23afd2-88ef-4d46-b430-6765b4251dc1.jpg">
+<img width="200" src="https://user-images.githubusercontent.com/46593078/176502453-91f7e093-6d47-4da3-9a93-5bb8f88564c0.jpg">
 
 ## 결과화면 
 
@@ -16,3 +16,7 @@ https://ghibli-mbti.netlify.app/question
 <img width="200" src="https://user-images.githubusercontent.com/46593078/176502652-7ac9d983-e680-45bd-b0ba-32bd383437fa.jpg">
 <img width="200" src="https://user-images.githubusercontent.com/46593078/176502657-9503ae67-aa8e-4f7f-a48f-0d7767617721.jpg">
 <img width="200" src="https://user-images.githubusercontent.com/46593078/176502664-c69abfc6-d1ea-4eda-b51c-3f1601e81be1.jpg">
+
+## 애널리틱스
+
+<img width="500" alt="스크린샷 2022-06-30 오전 2 56 55" src="https://user-images.githubusercontent.com/46593078/176504098-3b2d5978-6fa1-4013-ab48-a095920156bb.png">
