@@ -6,7 +6,7 @@ const StartPage = () => {
 
   const navigate = useNavigate();
   const startClick = (e) => {
-    navigate("/q1");
+    navigate("/question");
   }
 
   return (

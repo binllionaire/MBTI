@@ -1,1 +1,1 @@
-export {default as Q1Page} from "./Q1Page.jsx";
+export {default as QuestionPage} from "./QuestionPage.jsx";
