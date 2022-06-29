@@ -29,12 +29,9 @@
 
 .startPage{
   margin: 0 auto 0 auto;
-  width: 500px;
-  height: 700px;
-  background-image: url("totoro.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50% 40%;
+  width: 100%;
+  height: 100%;
+ 
   font-family: 'GowunBatang-Regular';
 }
 .StartPage_Title{
@@ -43,18 +40,19 @@
   line-height: 5px;
 }
 .subTitle{
+  font-size: 1em;
 }
 
 .title{
-  font-size: 30px;
+  font-size: 1.7rem;
 }
 .startBtn{
   font-family: 'GowunBatang-Regular';
-  margin: 40px auto;
+  margin: 40px auto ;
   display: block;
   outline: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.8em;
   line-height: 1;
   border-radius: 500px;
   transition-property: background-color,border-color,color,box-shadow,filter;

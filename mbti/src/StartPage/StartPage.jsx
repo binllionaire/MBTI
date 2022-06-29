@@ -15,10 +15,13 @@ const StartPage = () => {
     <div className="StartPage_Title">
     <p className="subTitle">내가 지브리 캐릭터라면 ?</p>
     <p className="title">지브리 캐릭터 MBTI 테스트</p>
+    
     </div>
    
     <button className="startBtn" onClick={startClick} >시작하기</button>
+    <img className ="image" src='img/totoro.gif'></img>
   </div>
+  
   );
 }
 
