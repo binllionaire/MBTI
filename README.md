@@ -3,7 +3,7 @@
 https://ghibli-mbti.netlify.app/question
 
 ## 시작화면
-![IMG_6180](https://user-images.githubusercontent.com/46593078/176502351-fd17d523-3a2f-47b6-9741-83363bed314d.jpg)
+<img width="300">https://user-images.githubusercontent.com/46593078/176502351-fd17d523-3a2f-47b6-9741-83363bed314d.jpg)</img>
 
 ## 질문화면
 ![IMG_6181](https://user-images.githubusercontent.com/46593078/176502438-2c23afd2-88ef-4d46-b430-6765b4251dc1.jpg)
