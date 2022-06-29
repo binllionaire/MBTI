@@ -4,6 +4,8 @@ import { Link, renderMatches, useNavigate } from 'react-router-dom'
 import './QuestionPage.css';
 import {useHistory} from 'react-router-dom';
 
+let E=0,I=0,S=0,N=0,F=0,T=0,P=0,J=0;
+
 const QuestionPage = () => {
  const qArray =["<센과 치히로의 행방불명><br/><br/>하쿠 : 잊지마, 나는 치히로 편이야 <br/> 나 : 어떻게 내 이름을 아는거야? <br/> 하쿠 : 네가 어렸을 때 부터 알고 있어 <br/>···<br/><br/> 하쿠의 말을 듣고 나의 반응은?",
                 "<마녀배달부 키키><br/><br/>키키 : 전에는 아무 생각을 안해도 날았는데<br/>어떻게 해야 날았는지 지금은 전혀 모르겠어요<br/>···<br/><br/> 키키의 말을 들은 나의 반응은?",
@@ -48,15 +50,7 @@ const QuestionPage = () => {
   const [answer, setAnswer] = useState(0);
   const [progressValue, setProgressValue] = useState(10);
   const navigate = useNavigate();
-  const [E,setE]=useState(0);
-  const [I,setI]=useState(0);
-  const [S,setS]=useState(0);
-  const [N,setN]=useState(0);
-  const [T,setT]=useState(0);
-  const [F,setF]=useState(0);
-  const [P,setP]=useState(0);
-  const [J,setJ]=useState(0);
-  const[Mbti,setMbti]=useState([]);
+  
   let MBTI = "";
  
   const next = () => {
@@ -66,86 +60,89 @@ const QuestionPage = () => {
   }
 
   const calculate1 = (answer) =>{
-    if(answer==0) setF(F+1);
-    else if(answer==1) setT(T+1);
-    else if(answer==2) setI(I+1);
-    else if(answer==3) setP(P+1);
-    else if(answer==4) setS(S+1);
-    else if(answer==5) setJ(J+1);
-    else if(answer==6) setF(F+1);
-    else if(answer==7) setN(N+1);
-    else if(answer==8) setS(S+1);
-    else if(answer==9) setI(I+1);
-    else if(answer==10) setJ(J+1);
-    else if(answer==11) setE(E+1);
+    if(answer==0) F++;
+    else if(answer==1) T++;
+    else if(answer==2) I++;
+    else if(answer==3) P++;
+    else if(answer==4) S++;
+    else if(answer==5) J++;
+    else if(answer==6) F++;
+    else if(answer==7) N++;
+    else if(answer==8) S++;
+    else if(answer==9) I++
+    else if(answer==10) J++;
+    else if(answer==11) E++;
+    console.log(E,I,S,N,T,F,P,J);
+    next();
   }
   const calculate2 =(answer)=>{
-    if(answer==0) setT(T+1);
-    else if(answer==1) setF(F+1);
-    else if(answer==2) setE(E+1);
-    else if(answer==3) setJ(J+1);
-    else if(answer==4) setN(N+1);
-    else if(answer==5) setP(P+1);
-    else if(answer==6) setT(T+1);
-    else if(answer==7) setS(S+1);
-    else if(answer==8) setN(N+1);
-    else if(answer==9) setE(E+1);
-    else if(answer==10) setP(P+1);
-    else if(answer==11) setI(I+1);
+    if(answer==0) T++;
+    else if(answer==1) F++;
+    else if(answer==2) E++;
+    else if(answer==3) J++;
+    else if(answer==4) N++;
+    else if(answer==5) P++;
+    else if(answer==6) T++;
+    else if(answer==7) S++;
+    else if(answer==8) N++;
+    else if(answer==9) E++
+    else if(answer==10) P++;
+    else if(answer==11) I++;
+    console.log(E,I,S,N,T,F,P,J);
+    next();
   }
   const result = () =>{
- 
     if((E>I)&&(S>N)&&(T>F)&&(P>J)){
       MBTI="ESTP";
     }
-    if((E>I)&&(S>N)&&(T>F)&&(P<J)){
+    else if((E>I)&&(S>N)&&(T>F)&&(P<J)){
       MBTI="ESTJ";
     }
-    if((E>I)&&(S>N)&&(T<F)&&(P>J)){
+    else if((E>I)&&(S>N)&&(T<F)&&(P>J)){
       MBTI="ESFP";
     }
-    if((E>I)&&(S>N)&&(T<F)&&(P<J)){
+    else if((E>I)&&(S>N)&&(T<F)&&(P<J)){
       MBTI="ESFJ";
     }
-    if((E>I)&&(S<N)&&(T<F)&&(P>J)){
+    else if((E>I)&&(S<N)&&(T<F)&&(P>J)){
       MBTI="ENFP";
     }
-    if((E>I)&&(S<N)&&(T<F)&&(P<J)){
+    else if((E>I)&&(S<N)&&(T<F)&&(P<J)){
       MBTI="ENFJ";
     }
-    if((E>I)&&(S<N)&&(T>F)&&(P>J)){
+    else if((E>I)&&(S<N)&&(T>F)&&(P>J)){
       MBTI="ENTP";
     }
-    if((E>I)&&(S<N)&&(T>F)&&(P<J)){
+    else if((E>I)&&(S<N)&&(T>F)&&(P<J)){
       MBTI="ENTJ";
     }
 
-    if((E<I)&&(S>N)&&(T>F)&&(P>J)){
+    else if((E<I)&&(S>N)&&(T>F)&&(P>J)){
       MBTI="ISTP";
     }
-    if((E<I)&&(S>N)&&(T>F)&&(P<J)){
+    else if((E<I)&&(S>N)&&(T>F)&&(P<J)){
       MBTI="ISTJ";
     }
-    if((E<I)&&(S>N)&&(T<F)&&(P>J)){
+    else if((E<I)&&(S>N)&&(T<F)&&(P>J)){
       MBTI="ISFP";
     }
-    if((E<I)&&(S>N)&&(T<F)&&(P<J)){
+    else if((E<I)&&(S>N)&&(T<F)&&(P<J)){
       MBTI="ISFJ";
     }
-    if((E<I)&&(S<N)&&(T<F)&&(P>J)){
+    else if((E<I)&&(S<N)&&(T<F)&&(P>J)){
       MBTI="INFP";
     }
-    if((E<I)&&(S<N)&&(T<F)&&(P<J)){
+    else if((E<I)&&(S<N)&&(T<F)&&(P<J)){
       MBTI="INFJ";
     }
-    if((E<I)&&(S<N)&&(T>F)&&(P>J)){
+    else if((E<I)&&(S<N)&&(T>F)&&(P>J)){
       MBTI="INTP";
     }
-    if((E<I)&&(S<N)&&(T>F)&&(P<J)){
+    else if((E<I)&&(S<N)&&(T>F)&&(P<J)){
       MBTI="INTJ";
     }
-    console.log(MBTI);
     resultClick();
+  
   }
   const resultClick = (e) => {
     navigate('/result', {state: { mbti: MBTI}})
@@ -160,28 +157,16 @@ const QuestionPage = () => {
     <p className="question" dangerouslySetInnerHTML={{__html: qArray[question]}}></p>
   <button className="answer" onClick={ () => {
     calculate1(answer);
-    next();
     if(progressValue>110){
       result();
-      
     }
   } } dangerouslySetInnerHTML={{__html: aArray1[answer]}}></button>
   <button className="answer" onClick={ () => {
     calculate2(answer);
-    next();
     if(progressValue>110){
       result();
     }
   } }  dangerouslySetInnerHTML={{__html: aArray2[answer]}}></button>
-  <p className="mbti" dangerouslySetInnerHTML={{__html: "MBTI:"+MBTI}}></p>
-  <p dangerouslySetInnerHTML={{__html: "E개수:"+E}}></p>
-  <p dangerouslySetInnerHTML={{__html: "I개수:"+I}}></p>
-  <p dangerouslySetInnerHTML={{__html: "S개수:"+S}}></p>
-  <p dangerouslySetInnerHTML={{__html: "N개수:"+N}}></p>
-  <p dangerouslySetInnerHTML={{__html: "F개수:"+F}}></p>
-  <p dangerouslySetInnerHTML={{__html: "T개수:"+T}}></p>
-  <p dangerouslySetInnerHTML={{__html: "P개수:"+P}}></p>
-  <p dangerouslySetInnerHTML={{__html: "J개수:"+J}}></p>
 
 </div>
 );
