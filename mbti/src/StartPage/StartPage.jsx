@@ -20,6 +20,7 @@ const StartPage = () => {
    
     <button className="startBtn" onClick={startClick} >시작하기</button>
     <img className ="image" src='img/totoro.gif'></img>
+    <p className='developer'>@binllionaire</p>
   </div>
   
   );
