@@ -1,6 +1,6 @@
 # 나와 닮은 지브리 캐릭터 MBTI 테스트
 
-https://ghibli-mbti.netlify.app/question
+https://ghibli-mbti.netlify.app
 
 ## 시작화면
 <img width="200" src="https://user-images.githubusercontent.com/46593078/176502351-fd17d523-3a2f-47b6-9741-83363bed314d.jpg">
